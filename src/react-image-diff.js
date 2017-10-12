@@ -119,7 +119,6 @@ class ImageDiff extends Component {
 
   renderSwipe() {
     let style = {
-      backgroundImage: `url(${bgImage})`,
       height: this.state.height,
       margin: 0,
       position: 'absolute',

@@ -210,7 +210,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'renderSwipe',
 	    value: function renderSwipe() {
 	      var style = {
-	        backgroundImage: 'url(' + bgImage + ')',
 	        height: this.state.height,
 	        margin: 0,
 	        position: 'absolute',
