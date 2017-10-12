@@ -87,12 +87,10 @@ class ImageDiff extends Component {
     };
 
     let beforeStyle = {
-      border: '1px solid #f77',
       ...style
     };
 
     let afterStyle = {
-      border: '1px solid #63c363',
       opacity: 1 - this.props.value,
       ...style
     };
@@ -129,18 +127,15 @@ class ImageDiff extends Component {
     };
 
     let beforeStyle = {
-      border: '1px solid #f77',
       ...style
     };
 
     let afterStyle = {
-      border: '1px solid #63c363',
       right: 0,
       ...style
     };
 
     let swiperStyle = {
-      borderLeft: '1px solid #999',
       height: this.state.height + 2,
       margin: 0,
       overflow: 'hidden',
