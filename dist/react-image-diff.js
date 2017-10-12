@@ -52,7 +52,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -80,7 +80,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  function ImageDiff() {
 	    _classCallCheck(this, ImageDiff);
 
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ImageDiff).call(this));
+	    var _this = _possibleConstructorReturn(this, (ImageDiff.__proto__ || Object.getPrototypeOf(ImageDiff)).call(this));
 
 	    _this.renderFade = function () {
 	      var style = {
@@ -91,12 +91,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        width: _this.state.width
 	      };
 
-	      var beforeStyle = _extends({
-	        border: '1px solid #f77'
-	      }, style);
+	      var beforeStyle = _extends({}, style);
 
 	      var afterStyle = _extends({
-	        border: '1px solid #63c363',
 	        opacity: 1 - _this.props.value
 	      }, style);
 
@@ -150,9 +147,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'handleImgLoad',
 	    value: function handleImgLoad(e) {
 	      if (!this.props.height && !this.props.width) {
-	        var _e$target = e.target;
-	        var height = _e$target.height;
-	        var width = _e$target.width;
+	        var _e$target = e.target,
+	            height = _e$target.height,
+	            width = _e$target.width;
 
 	        this.setState({
 	          height: height, width: width
@@ -220,17 +217,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        width: this.state.width
 	      };
 
-	      var beforeStyle = _extends({
-	        border: '1px solid #f77'
-	      }, style);
+	      var beforeStyle = _extends({}, style);
 
 	      var afterStyle = _extends({
-	        border: '1px solid #63c363',
 	        right: 0
 	      }, style);
 
 	      var swiperStyle = {
-	        borderLeft: '1px solid #999',
 	        height: this.state.height + 2,
 	        margin: 0,
 	        overflow: 'hidden',
@@ -288,13 +281,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = ImageDiff;
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
 
-/***/ }
+/***/ })
 /******/ ])
 });
 ;
